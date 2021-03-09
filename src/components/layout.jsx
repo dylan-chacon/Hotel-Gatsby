@@ -12,9 +12,10 @@ const Layout = (props) => {
                     font-size: 62.5%;
                 }
                 body {
-                    font-size: 16px;
-                    font-size: 1.6rem;
-                    line-height: 1.5
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                    line-height: 1.5;
+                    font-family: 'PT Sans', sans-serif;
                 }
                 h1, h2, h3 {
                     margin: 0;
@@ -35,7 +36,7 @@ const Layout = (props) => {
             />
             <Helmet>
                 <title>Gatsby Hotel</title>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
             </Helmet>
             <Header />

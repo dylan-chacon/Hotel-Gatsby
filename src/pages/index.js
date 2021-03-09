@@ -1,12 +1,11 @@
 import * as React from "react"
 import Layout from '../components/layout';
+import ImgHotel from '../components/imgHotel'
 
 const IndexPage = () => (
-  <>
-    <Layout>
-      <h1>Gatsby Hotel</h1>
-    </Layout>
-  </>
-)
+  <Layout>
+    <ImgHotel />
+  </Layout>
+);
 
 export default IndexPage
