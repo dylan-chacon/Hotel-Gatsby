@@ -1,10 +1,11 @@
 import * as React from "react"
 import Layout from '../components/layout';
+import ContentAboutUs from '../components/contentAboutUs';
 
 const AboutUs = () => (
   <>
     <Layout>
-      <h1>Nosotros</h1>
+      <ContentAboutUs />
     </Layout>
   </>
 )
