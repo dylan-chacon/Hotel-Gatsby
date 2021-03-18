@@ -10,13 +10,15 @@ const HomeLink = styled(Link)`
     text-decoration: none;
 `;
 
-const Header = () => {
+const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <>
-            <header css={css`
-                    background-color: rgba(44,62,80);
-                    padding: 1rem;
-                `}>
+            <footer css={css`
+                background-color: rgba(44,62,80);
+                matgin-top: 5rem;
+                padding: 1rem;
+            `}>
                 <div css={css`
                     max-width: 1200px;
                     margin: 0 auto;
@@ -27,15 +29,22 @@ const Header = () => {
                         justify-content: space-between;
                     }
                 `}>
+                    <Navigation />
                     <HomeLink to="/">
                         <h1>Hotel Gatsby</h1>
                     </HomeLink>
 
-                    <Navigation />
                 </div>
-            </header>
+            </footer>
+            <p css={css`
+                text-align: center;
+                color: #FFF;
+                background-color: rgb(33,44,55);
+                margin: 0;
+                padding: 1rem;
+            `}>Hotel Gatsby. Todos los derechos reservados {year} &copy; </p>
         </>
     );
 }
  
-export default Header;
+export default Footer;
