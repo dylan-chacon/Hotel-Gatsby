@@ -22,7 +22,12 @@ const Room = ({data}) => {
             border: 1px solid #e1e1e1;
             margin-bottom: 2rem;
         `}>
-            <img src={imagen.fixed.src} />
+            <img
+                css={css`
+                    width: 100%;
+                `}
+                src={imagen.fixed.srcSet}
+            />
             <div css={css`
                 padding: 3rem;
             `}>

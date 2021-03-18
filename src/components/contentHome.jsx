@@ -45,7 +45,12 @@ const ContentHome = () => {
             `}>{titulo}</h2>
             <Home>
                 <p>{contenido}</p>
-                <img src={imagen.fixed.src} alt="Nuestro hotel" />
+                <img
+                    css={css`
+                        width: 100%;
+                    `}
+                    src={imagen.fixed.srcSet}
+                />
             </Home>
         </>
     );
